@@ -61,6 +61,7 @@
 
 
         $("#yenisoru").click(function () {
+            $("#dogrusu").fadeout(1);
             saniye = 0;
             clearInterval(zaman);
             $("#sure").text(saniye + "saniye");
@@ -169,6 +170,9 @@
                         alert("yanlış");
                         yanlış++;
                         $("#yanlış").text("yanlış sayın:" + yanlış);
+                          $("#dogrusu").text("Doğrusu" + acik);
+                        $("#dogrusu").fadeIn(1);
+
                     };
 
                 }
